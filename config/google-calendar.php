@@ -14,6 +14,8 @@ return [
              * Path to the json file containing the credentials.
              */
             'credentials_json' => storage_path('app/google-calendar/service-account-credentials.json'),
+            'user_to_impersonate' => env('USER_TO_IMPERSONATE'),
+
         ],
 
         /*
@@ -35,7 +37,6 @@ return [
     /*
      *  The id of the Google Calendar that will be used by default.
      */
-    'calendar_id' => env('GOOGLE_CALENDAR_ID'),
-    	'user_to_impersonate' => env('USER_TO_IMPERSONATE'),
+    'calendar_id' => env('GOOGLE_CALENDAR_ID')
 
 ];

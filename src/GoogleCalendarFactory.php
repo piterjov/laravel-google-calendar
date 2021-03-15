@@ -43,7 +43,7 @@ class GoogleCalendarFactory
 
         $client->setAuthConfig($authProfile['credentials_json']);
         
-        $client->setSubject($config['user_to_impersonate']);
+        $client->setSubject($authProfile['user_to_impersonate']);
 
 
         return $client;

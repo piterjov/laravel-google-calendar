@@ -36,4 +36,6 @@ return [
      *  The id of the Google Calendar that will be used by default.
      */
     'calendar_id' => env('GOOGLE_CALENDAR_ID'),
+    	'user_to_impersonate' => env('USER_TO_IMPERSONATE'),
+
 ];
